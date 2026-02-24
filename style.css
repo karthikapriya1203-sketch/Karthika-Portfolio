@@ -1,0 +1,427 @@
+/* 
+   Design System & Professional Theme
+   Aesthetics: Textile-inspired, Light, Elegant, Professional
+*/
+
+:root {
+    --primary-color: #2c3e50; /* Deep charcoal for text */
+    --accent-color: #3498db;  /* Soft professional blue */
+    --accent-light: #ebf5fb;
+    --text-color: #333;
+    --text-light: #666;
+    --bg-color: #ffffff;
+    --section-bg: #f8f9fa;
+    --weave-pattern-color: rgba(52, 152, 219, 0.03);
+    --transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --container-width: 1100px;
+    --header-height: 80px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, .logo {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Textile background pattern */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(var(--weave-pattern-color) 1px, transparent 1px),
+                      linear-gradient(90deg, var(--weave-pattern-color) 1px, transparent 1px);
+    background-size: 20px 20px;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* Navigation */
+.navbar {
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    transition: var(--transition);
+}
+
+.navbar.scrolled {
+    height: 65px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.logo span {
+    color: var(--accent-color);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: var(--transition);
+}
+
+.nav-links a:hover {
+    color: var(--accent-color);
+}
+
+.mobile-menu-btn {
+    display: none;
+    cursor: pointer;
+}
+
+/* Sections */
+.section {
+    padding: 8rem 0;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    position: relative;
+}
+
+.section-title::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background: var(--accent-color);
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: var(--header-height);
+    background: radial-gradient(circle at top right, var(--accent-light), transparent 60%);
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.sub-title {
+    font-family: 'Outfit', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 0.9rem;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.main-title {
+    font-size: 4rem;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+}
+
+.main-title span {
+    color: var(--accent-color);
+}
+
+.tagline {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    margin-bottom: 2.5rem;
+}
+
+.hero-btns {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn {
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn-primary {
+    background: var(--primary-color);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: var(--accent-color);
+    transform: translateY(-3px);
+}
+
+.btn-secondary {
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.btn-secondary:hover {
+    background: var(--accent-light);
+    transform: translateY(-3px);
+}
+
+.hero-image {
+    position: relative;
+}
+
+.profile-frame {
+    width: 350px;
+    height: 450px;
+    background: #eee;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+
+.placeholder-img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #f3f4f6, #e5e7eb);
+    color: #999;
+}
+
+.pattern-blob {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: var(--accent-light);
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    top: -20px;
+    right: -20px;
+    z-index: 1;
+    animation: morph 10s infinite alternate;
+}
+
+@keyframes morph {
+    0% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+    100% { border-radius: 53% 47% 33% 67% / 60% 41% 59% 40%; }
+}
+
+/* About Section */
+.roles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin: 2.5rem 0;
+}
+
+.role-card {
+    padding: 1.5rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    text-align: center;
+    border: 1px solid rgba(0,0,0,0.02);
+}
+
+.role-card i {
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+.internship-box {
+    background: var(--primary-color);
+    color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    margin-top: 2rem;
+}
+
+.internship-box h3 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Outfit', sans-serif;
+}
+
+/* Skills Cards */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.skill-category {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 2rem;
+    border-radius: 15px;
+    border: 1px solid rgba(255,255,255,0.8);
+}
+
+.skill-category h3 {
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.skill-tags span {
+    padding: 0.4rem 1rem;
+    background: white;
+    border: 1px solid var(--accent-light);
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+/* Glass Background */
+.glass-bg {
+    background: var(--section-bg);
+    position: relative;
+}
+
+/* Assignments Placeholder */
+.assignments-placeholder {
+    padding: 5rem;
+    text-align: center;
+    border: 2px dashed #ddd;
+    border-radius: 20px;
+    color: #888;
+}
+
+.assignments-placeholder i {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    opacity: 0.3;
+}
+
+/* Contact Details */
+.contact-grid {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.02);
+}
+
+.contact-item i {
+    width: 50px;
+    height: 50px;
+    background: var(--accent-light);
+    color: var(--accent-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.contact-item a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    color: var(--accent-color);
+}
+
+.footer {
+    padding: 2rem 0;
+    text-align: center;
+    border-top: 1px solid #eee;
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+/* Reveal Animation */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 1s all ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .container { padding: 0 1.5rem; }
+    .hero-content { grid-template-columns: 1fr; text-align: center; gap: 2rem; }
+    .hero-btns { justify-content: center; }
+    .main-title { font-size: 2.8rem; }
+    .nav-links { display: none; }
+    .mobile-menu-btn { display: block; }
+    .roles-grid { grid-template-columns: 1fr; }
+    .profile-frame { width: 100%; max-width: 300px; margin: 0 auto; }
+}
