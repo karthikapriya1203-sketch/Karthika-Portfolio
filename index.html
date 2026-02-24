@@ -4,202 +4,409 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Karthika | Textile Technology Professional Portfolio</title>
-    <meta name="description"
-        content="Portfolio of Karthika, a B.Tech Textile Technology student at KCT, Secretary of Department Association, and R&D Intern at Shiva Texyarn.">
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
-        rel="stylesheet">
-
-    <!-- Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
-
+    <title>Karthika | Textile Technology Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="container nav-content">
-            <a href="#home" class="logo">Karthika<span>.</span></a>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#assignments">Assignments</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="mobile-menu-btn" id="mobile-menu-btn">
-                <i data-lucide="menu"></i>
+    <div class="app-container">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-top">
+                <a href="#home" class="nav-logo">
+                    <i class="fas fa-microchip"></i>
+                    <span>Portfolio</span>
+                </a>
+                <ul class="nav-links">
+                    <li class="nav-item"><a href="#home" class="active"><i class="fas fa-home"></i>
+                            <span>Home</span></a></li>
+                    <li class="nav-item"><a href="#about"><i class="fas fa-user"></i> <span>About Me</span></a></li>
+                    <li class="nav-item"><a href="#skills"><i class="fas fa-tools"></i> <span>Skills</span></a></li>
+                    <li class="nav-item"><a href="#projects"><i class="fas fa-project-diagram"></i>
+                            <span>Assignments</span></a></li>
+                    <li class="nav-item"><a href="#experience"><i class="fas fa-briefcase"></i>
+                            <span>Experience</span></a></li>
+                    <li class="nav-item"><a href="#contact"><i class="fas fa-envelope"></i> <span>Contact</span></a>
+                    </li>
+                </ul>
             </div>
-        </div>
-    </nav>
+            <div class="nav-bottom">
+                <a href="https://1drv.ms/p/c/EAA27C1328AE0986/IQARv32JpXM3Q5X_Fy9C7aXFAV2sr72TsuG9WG4zlgpQe88?e=rK3Ikn"
+                    class="btn btn-primary" style="width: 100%; text-align: center;">Resume</a>
+            </div>
+        </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container hero-content">
-            <div class="hero-text reveal">
-                <h2 class="sub-title">Karthika, B.Tech Textile Technology</h2>
-                <h1 class="main-title">Crafting the Future of <span>Textile Innovation</span>.</h1>
-                <p class="tagline">Technical Textile | Engineering, Design & Digital Skills</p>
-                <div class="hero-btns">
-                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                    <a href="#about" class="btn btn-secondary">Learn More</a>
-                </div>
-            </div>
-            <div class="hero-image reveal">
-                <!-- Decorative Textile Pattern Element -->
-                <div class="pattern-blob"></div>
-                <div class="profile-frame">
-                    <div class="placeholder-img">Portfolio Image</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="section about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-grid">
-                <div class="about-text reveal">
-                    <p>I am currently a 3rd-year <strong>B.Tech Textile Technology</strong> student at
-                        <strong>Kumaraguru College of Technology (KCT), Coimbatore</strong>. My journey in textiles is
-                        fueled by a passion for sustainability and technical innovation.
+        <!-- Main Content -->
+        <main>
+            <!-- Home Section -->
+            <section id="home" class="hero visible">
+                <div class="hero-content">
+                    <span class="hero-tagline">Welcome to my professional space</span>
+                    <h1 class="hero-title">Hello, I'm <span class="hero-highlight">Karthika</span></h1>
+                    <p class="hero-description">
+                        B.Tech Textile Technology Student | Innovator | Leader.
+                        Dedicated to academic excellence and social impact.
                     </p>
-
-                    <div class="roles-grid">
-                        <div class="role-card">
-                            <i data-lucide="award"></i>
-                            <h3>Secretary</h3>
-                            <p>Department Association, KCT</p>
-                        </div>
-                        <div class="role-card">
-                            <i data-lucide="users"></i>
-                            <h3>Vice President</h3>
-                            <p>Rotaract Club of KCT</p>
-                        </div>
-                        <div class="role-card">
-                            <i data-lucide="activity"></i>
-                            <h3>Member</h3>
-                            <p>NSS, RRC, VBC @ KCT</p>
-                        </div>
+                    <div class="hero-highlights">
+                        <div class="badge"><i class="fas fa-award"></i> Secretary @ Textile Dept Association</div>
+                        <div class="badge"><i class="fas fa-users"></i> Vice President @ Rotaract</div>
                     </div>
-
-                    <div class="internship-box">
-                        <h3><i data-lucide="briefcase"></i> Current Internship</h3>
-                        <p><strong>R&D Engineer Intern</strong> at Shiva Texyarn Limited. Focus on research and
-                            development in textile engineering.</p>
+                    <div style="margin-top: 2.5rem; display: flex; gap: 1rem;">
+                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                        <a href="#about" class="btn"
+                            style="border: 1px solid var(--primary); color: var(--primary);">More About Me</a>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="section skills glass-bg">
-        <div class="container">
-            <h2 class="section-title">Technical & Soft Skills</h2>
-            <div class="skills-container">
-                <div class="skill-category reveal">
-                    <h3>Programming</h3>
-                    <div class="skill-tags">
-                        <span>C</span> <span>C++</span> <span>Python</span> <span>Java</span> <span>HTML Basics</span>
-                    </div>
+                <div class="hero-image">
+                    <img src="C:\Users\karth\Desktop\portfolio\Karthika Formal picture.jpeg"
+                        alt="Karthika Professional Picture">
+                    <!-- Placeholder image, user can replace with personal photo -->
                 </div>
-                <div class="skill-category reveal">
-                    <h3>Design & Modeling</h3>
-                    <div class="skill-tags">
-                        <span>2D AutoCAD</span> <span>3D AutoCAD</span> <span>Canva Editing</span>
-                    </div>
-                </div>
-                <div class="skill-category reveal">
-                    <h3>Professional</h3>
-                    <div class="skill-tags">
-                        <span>Microsoft Office</span> <span>Digital Marketing (Basic)</span>
-                    </div>
-                </div>
-                <div class="skill-category reveal">
-                    <h3>Languages</h3>
-                    <div class="skill-tags">
-                        <span>Tamil (Native)</span> <span>English (Fluent)</span> <span>German (Basic)</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+            </section>
 
-    <!-- Assignments Section -->
-    <section id="assignments" class="section assignments">
-        <div class="container">
-            <h2 class="section-title">Assignments</h2>
-            <div class="assignments-placeholder reveal">
-                <i data-lucide="file-text"></i>
-                <p>Academic assignments and projects will be uploaded here soon.</p>
-            </div>
-        </div>
-    </section>
+            <!-- About Me Section -->
+            <section id="about">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>I am a B.Tech Textile Technology student at Kumaraguru College of Technology (KCT),
+                            Coimbatore. Passionate about innovation and leadership, I am committed to both academic
+                            excellence, internship and social impact.</p>
+                        <p>I am an active member in NSS (National Service Scheme), RRC (Red Ribbon Club), VBC (Volunteer
+                            Blood Donor Club) and Vice President of Rotaract Club KCT.</p>
 
-    <!-- Resume Section -->
-    <section id="resume" class="section resume glass-bg">
-        <div class="container">
-            <div class="resume-content reveal">
-                <h2 class="section-title">Resume</h2>
-                <p>Download my latest resume to learn more about my academic background and professional experience.</p>
-                <a href="#" class="btn btn-primary"><i data-lucide="download"></i> Download Resume</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section contact">
-        <div class="container">
-            <h2 class="section-title">Contact Me</h2>
-            <div class="contact-grid">
-                <div class="contact-info reveal">
-                    <div class="contact-item">
-                        <i data-lucide="mail"></i>
-                        <div>
-                            <h4>Email</h4>
-                            <p>karthika.kct@example.com</p>
-                        </div>
+                        <h3 style="margin: 2rem 0 1rem;">Leadership & Extracurricular</h3>
+                        <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.8rem;">
+                            <li><i class="fas fa-check-circle" style="color: var(--primary);"></i> Alumini coordinator @
+                                Textile Dept Association (2024-25)</li>
+                            <li><i class="fas fa-check-circle" style="color: var(--primary);"></i> Secretary @ Textile
+                                Dept Association (2024-25)</li>
+                            <li><i class="fas fa-check-circle" style="color: var(--primary);"></i> Vice President @
+                                Rotaract
+                                Club Of KCT (2025-26)</li>
+                            <li><i class="fas fa-check-circle" style="color: var(--primary);"></i> Member @ NSS|RRC|VBC
+                                Club Of KCT (2024-26)</li>
+                            <li><i class="fas fa-check-circle" style="color: var(--primary);"></i> Participant @
+                                Industry Conclave on Technology Integrated Textile & Fashion (March 2025)</li>
+                        </ul>
                     </div>
-                    <div class="contact-item">
-                        <i data-lucide="linkedin"></i>
-                        <div>
-                            <h4>LinkedIn</h4>
-                            <p><a href="#">linkedin.com/in/karthika-textiles</a></p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i data-lucide="phone"></i>
-                        <div>
-                            <h4>Phone</h4>
-                            <p>+91 XXXXX XXXXX</p>
+                    <div class="about-stats">
+                        <div class="card">
+                            <i class="fas fa-graduation-cap card-icon"></i>
+                            <a href="https://kct.ac.in/" class="btn btn-primary"
+                                style="width: 100%; text-align: center;">
+                                <h3>Education</h3>
+                                <p>3rd Year, B.Tech Textile Technology</p>
+                                <p>Kumaraguru College of Technology</p>
+                            </a>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
+            </section>
 
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Karthika. All Rights Reserved.</p>
-        </div>
-    </footer>
+            <!-- Skills Section -->
+            <section id="skills">
+                <h2 class="section-title">Skills & Certifications</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <i class="fas fa-code card-icon"></i>
+                        <h3>Technical Skills</h3>
+                        <div class="club-badges">
+                            <span class="badge">C</span>
+                            <span class="badge">C++</span>
+                            <span class="badge">Python</span>
+                            <span class="badge">Java</span>
+                            <span class="badge">2D/3D AutoCAD</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-palette card-icon"></i>
+                        <h3>Creative & Digital</h3>
+                        <div class="club-badges">
+                            <span class="badge">Digital Marketing</span>
+                            <span class="badge">Canva</span>
+                            <span class="badge">App Development</span>
+                            <span class="badge">MS Office</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-certificate card-icon"></i>
+                        <h3>Certifications</h3>
+                        <ul
+                            style="font-size: 0.9rem; margin-top: 0.5rem; display: flex; flex-direction: column; gap: 0.5rem; list-style: none;">
+                            <a href="C:\Users\karth\Downloads\WhatsApp Image 2026-02-09 at 7.58.05 PM.jpeg"
+                                class="btn btn-primary" style="width: 100%; text-align: center;">
+                                <li><i class="fas fa-award"></i> Mahatma Gandhi Merit Scholarship (23-24)</li>
+                            </a>
+                            <a href="C:\Users\karth\Downloads\WhatsApp Image 2026-02-09 at 7.58.05 PM (1).jpeg"
+                                class="btn btn-primary" style="width: 100%; text-align: center;">
+                                <li><i class="fas fa-award"></i> Mahatma Gandhi Merit Scholarship (24-25)</li>
+                            </a>
+                            <a href="C:\Users\karth\Downloads\WhatsApp Image 2026-02-09 at 7.58.03 PM (1).jpeg"
+                                class="btn btn-primary" style="width: 100%; text-align: center;">
+                                <li><i class="fas fa-file-code"></i> DMO certification</li>
+                            </a>
+                            <a href="C:\Users\karth\Downloads\WhatsApp Image 2026-02-09 at 7.58.03 PM (2).jpeg"
+                                class="btn btn-primary" style="width: 100%; text-align: center;">
+                                <li><i class="fas fa-flask"></i> DCP Certification</li>
+                            </a>
+                            <a href="C:\Users\karth\Downloads\WhatsApp Image 2026-02-09 at 7.58.03 PM.jpeg"
+                                class="btn btn-primary" style="width: 100%; text-align: center;">
+                                <li><i class="fas fa-flask"></i> Java Certification</li>
+                            </a>
+                            <a href="C:\Users\karth\Downloads\WhatsApp Image 2026-02-09 at 8.37.58 PM.jpeg"
+                                class="btn btn-primary" style="width: 100%; text-align: center;">
+                                <li><i class="fas fa-flask"></i> International Conference on Recent Trends in Materials
+                                    science'24 - participated Paper Presentation </li>
+                            </a>
+                            <a href="C:\Users\karth\Downloads\WhatsApp Image 2026-02-09 at 7.58.02 PM.jpeg"
+                                class="btn btn-primary" style="width: 100%; text-align: center;">
+                                <li><i class="fas fa-flask"></i> Participated in Digital Marketing Workshop</li>
+                            </a>
+                            <a href="file:///C:/Users/karth/Downloads/Science%20of%20Clothing%20Comfort%20certificate.pdf"
+                                class="btn btn-primary" style="width: 100%; text-align: center;">
+                                <li><i class="fas fa-flask"></i> NPTEL – Clothing Science and Comfort</li>
+                            </a>
+                            <a href="C:\Users\karth\Downloads\WhatsApp Image 2026-02-09 at 7.58.01 PM.jpeg"
+                                class="btn btn-primary" style="width: 100%; text-align: center;">
+                                <li><i class="fas fa-flask"></i> UNIDO – Introduction to the Treatment of Tannery
+                                    Effluents </li>
+                                <a href="C:\Users\karth\Downloads\WhatsApp Image 2026-02-09 at 8.19.23 PM.jpeg"
+                                    class="btn btn-primary" style="width: 100%; text-align: center;">
+                                    <li><i class="fas fa-flask"></i> Industry Conclave on Technology Integrated Textiles
+                                        &
+                                        Fashion'25 - Participated & Volunteerred </li>
+                                </a>
+                            </a>
+                            <a href="C:\Users\karth\Downloads\WhatsApp Image 2026-02-09 at 8.19.22 PM.jpeg"
+                                class="btn btn-primary" style="width: 100%; text-align: center;">
+                                <li><i class="fas fa-flask"></i> ADVAITA'2K25 Poster Presentation - 2nd place</li>
+                            </a>
+                            <a href="C:\Users\karth\Downloads\WhatsApp Image 2026-02-09 at 8.19.22 PM (1).jpeg"
+                                class="btn btn-primary" style="width: 100%; text-align: center;">
+                                <li><i class="fas fa-flask"></i> TEXCELLENCE'25 Poster Presentation - 1st place</li>
+                            </a>
+                            <a href="C:\Users\karth\Downloads\WhatsApp Image 2026-02-09 at 8.23.27 PM.jpeg"
+                                class="btn btn-primary" style="width: 100%; text-align: center;">
+                                <li><i class="fas fa-flask"></i> TEX VISION 2025 Poster Presentation - 1st place </li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-language card-icon"></i>
+                        <h3>Languages</h3>
+                        <p style="margin-top: 0.5rem;"><b>Tamil</b> - Native</p>
+                        <p><b>English</b> - Professional</p>
+                        <p><b>German</b> - Basic Level</p>
+                    </div>
+                </div>
+            </section>
 
-    <!-- Scripts -->
-    <script src="script.js"></script>
-    <script>
-        // Initialize Lucide Icons
-        lucide.createIcons();
-    </script>
+            <!-- Projects/Assignments Section -->
+            <!-- Assignments Section -->
+            <section id="projects">
+                <h2 class="section-title">Assignments & Projects</h2>
+                <p style="margin-bottom: 2rem;">Explore my academic assignments and research projects.</p>
+
+                <div class="card-grid" id="assignments-container"></div>
+                <div class="magic-cursor"></div>
+            </section>
+            <!-- Internships & Experience -->
+            <section id="experience">
+                <h2 class="section-title">Internships & Experience</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <div
+                            style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+                            <span class="badge" style="background: rgba(37, 99, 235, 0.1);">Ongoing</span>
+                            <i class="fas fa-industry card-icon" style="margin-bottom: 0;"></i>
+                        </div>
+                        <h3>Shiva TexYarn Limited</h3>
+                        <p style="color: var(--primary); font-weight: 500; font-size: 0.9rem; margin-bottom: 1rem;">
+                            Intern @ Lamination Division</p>
+                        <p style="font-size: 0.95rem; margin-bottom: 1.5rem;">Working on fabric-to-fabric and
+                            fabric-to-film lamination processes. Experience in quality evaluation and adhesion testing.
+                        </p>
+                        <div style="display: flex; gap: 0.5rem;">
+                            <button class="btn-sm btn-view" data-item="Shiva TexYarn Intern Cert">Certificate</button>
+                            <a href="https://www.shivatex.in/" target="_blank" class="btn-sm"
+                                style="text-decoration: none;">Website</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div
+                            style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+                            <span class="badge">Completed</span>
+                            <i class="fas fa-couch card-icon" style="margin-bottom: 0;"></i>
+                        </div>
+                        <h3>Greenhome Furnishings</h3>
+                        <p style="color: var(--primary); font-weight: 500; font-size: 0.9rem; margin-bottom: 1rem;">
+                            Manufacturing Intern</p>
+                        <p style="font-size: 0.95rem; margin-bottom: 1.5rem;">Gained exposure to home textile
+                            manufacturing, including fabric selection, finishing, and export quality standards.</p>
+                        <div style="display: flex; gap: 0.5rem;">
+                            <button class="btn-sm btn-view" data-item="Greenhome Intern Cert">Certificate</button>
+                            <a href="https://www.greenhomefurnishings.com/index.php" class="btn-sm"
+                                style="text-decoration: none;">Website</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div
+                            style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+                            <span class="badge">Completed</span>
+                            <i class="fas fa-truck-loading card-icon" style="margin-bottom: 0;"></i>
+                        </div>
+                        <h3>MLB Enterprises</h3>
+                        <p style="color: var(--primary); font-weight: 500; font-size: 0.9rem; margin-bottom: 1rem;">
+                            Supply Chain Intern</p>
+                        <p style="font-size: 0.95rem; margin-bottom: 1.5rem;">Learned textile trading, sourcing, supply
+                            chain coordination, and application-based material selection.</p>
+                        <div style="display: flex; gap: 0.5rem;">
+                            <button class="btn-sm btn-view"
+                                data-item="C:\Users\karth\Downloads\WhatsApp Image 2026-02-09 at 7.58.04 PM (1).jpeg">Certificate</button>
+                            <a href="https://www.mlbenterprises.com/" class="btn-sm"
+                                style="text-decoration: none;">Website</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div
+                            style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+                            <span class="badge">Completed</span>
+                            <i class="fas fa-cog card-icon" style="margin-bottom: 0;"></i>
+                        </div>
+                        <h3>Vedagiri Hi-Tech Spinning</h3>
+                        <p style="color: var(--primary); font-weight: 500; font-size: 0.9rem; margin-bottom: 1rem;">
+                            Technical Intern</p>
+                        <p style="font-size: 0.95rem; margin-bottom: 1.5rem;">Insight into modern spinning technologies,
+                            automation, raw material selection, and process optimization.</p>
+                        <div style="display: flex; gap: 0.5rem;">
+                            <button class="btn-sm btn-view"
+                                data-item="C:\Users\karth\Downloads\WhatsApp Image 2026-02-09 at 7.58.04 PM.jpeg">Certificate</button>
+                            <a href="https://www.zaubacorp.com/VEDAGIRI-HI-TECH-SPINNING-MILLS-PRIVATE-LIMITED-U17111TZ2006PTC013090"
+                                class="btn-sm" style="text-decoration: none;">Website</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div
+                            style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+                            <span class="badge">Completed</span>
+                            <i class="fas fa-microscope card-icon" style="margin-bottom: 0;"></i>
+                        </div>
+                        <h3>The Lakshmi Mills</h3>
+                        <p style="color: var(--primary); font-weight: 500; font-size: 0.9rem; margin-bottom: 1rem;">
+                            Quality Control Intern</p>
+                        <p style="font-size: 0.95rem; margin-bottom: 1.5rem;">Overview of large-scale spinning
+                            operations, production planning, and industrial safety procedures.</p>
+                        <div style="display: flex; gap: 0.5rem;">
+                            <button class="btn-sm btn-view" data-item="Lakshmi Mills Cert">Certificate</button>
+                            <a href="https://www.lakshmimills.com/" class="btn-sm"
+                                style="text-decoration: none;">Website</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div
+                            style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+                            <span class="badge">Completed</span>
+                            <i class="fas fa-dna card-icon" style="margin-bottom: 0;"></i>
+                        </div>
+                        <h3>Santhosh Spinning Mill</h3>
+                        <p style="color: var(--primary); font-weight: 500; font-size: 0.9rem; margin-bottom: 1rem;">
+                            Process Intern</p>
+                        <p style="font-size: 0.95rem; margin-bottom: 1.5rem;">Understanding of ring spinning process,
+                            yarn formation, production flow, and quality parameters.</p>
+                        <div style="display: flex; gap: 0.5rem;">
+                            <button class="btn-sm btn-view" data-item="Santhosh Spinning Cert">Certificate</button>
+                            <a href="https://www.indiamart.com/santhosh-spinning-mills/aboutus.html" class="btn-sm"
+                                style="text-decoration: none;">Website</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div
+                            style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+                            <span class="badge" style="background: rgba(37, 99, 235, 0.1);">Education /
+                                Experience</span>
+                            <i class="fas fa-university card-icon" style="margin-bottom: 0;"></i>
+                        </div>
+                        <h3>Kumaraguru College of Technology</h3>
+                        <p style="color: var(--primary); font-weight: 500; font-size: 0.9rem; margin-bottom: 1rem;">
+                            B.Tech Textile Technology (3rd Year)</p>
+                        <p style="font-size: 0.95rem; margin-bottom: 1.5rem;">Focus: Spinning systems, Fabric
+                            manufacturing, Textile testing, Modern production technology, Technical textiles, and
+                            ProtoSem participation.</p>
+                        <div style="display: flex; gap: 0.5rem;">
+                            <a href="https://www.kct.ac.in/" target="_blank" class="btn-sm"
+                                style="text-decoration: none;">Visit Website</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="about-grid">
+                    <div class="contact-info">
+                        <p style="margin-bottom: 2rem;">I'm always open to discussing new opportunities, creative ideas,
+                            or social impact projects.</p>
+                        <div class="contact-item" style="display: flex; gap: 1rem; margin-bottom: 1.5rem;">
+                            <i class="fas fa-envelope" style="color: var(--primary); font-size: 1.2rem;"></i>
+                            <div>
+                                <h4 style="font-size: 0.9rem; color: var(--text-muted);">Email</h4>
+                                <p><a href="karthikapriya1203@gmail.com"
+                                        style="text-decoration: none; color: inherit;">karthikapriya1203@gmail.com</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="contact-item" style="display: flex; gap: 1rem; margin-bottom: 1.5rem;">
+                            <i class="fab fa-linkedin" style="color: var(--primary); font-size: 1.2rem;"></i>
+                            <div>
+                                <h4 style="font-size: 0.9rem; color: var(--text-muted);">LinkedIn</h4>
+                                <p><a href="https://www.linkedin.com/in/karthka-s?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                                        style="text-decoration: none; color: inherit;">https://www.linkedin.com/in/karthka-s</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="contact-item" style="display: flex; gap: 1rem; margin-bottom: 1.5rem;">
+                            <i class="fab fa-whatsapp" style="color: var(--primary); font-size: 1.2rem;"></i>
+                            <div>
+                                <h4 style="font-size: 0.9rem; color: var(--text-muted);">Whatsapp</h4>
+                                <p><a href="https://wa.me/919042671826"
+                                        style="text-decoration: none; color: inherit;">+91 9042671826</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="card" style="display: flex; flex-direction: column; gap: 1rem;">
+                        <input type="text" placeholder="Your Name"
+                            style="padding: 1rem; border-radius: 12px; border: 1px solid var(--border-color);">
+                        <input type="email" placeholder="Your Email"
+                            style="padding: 1rem; border-radius: 12px; border: 1px solid var(--border-color);">
+                        <textarea placeholder="Your Message" rows="5"
+                            style="padding: 1rem; border-radius: 12px; border: 1px solid var(--border-color);"></textarea>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+
+
+    <!-- Modal for details -->
+    <div id="modal" class="modal-overlay" style="display: none;">
+        <div class="modal-content card">
+            <span id="close-modal"
+                style="position: absolute; top: 1rem; right: 1.5rem; font-size: 2rem; cursor: pointer;">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
 </body>
 
 </html>
